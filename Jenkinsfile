@@ -25,7 +25,7 @@ pipeline {
                 bat "docker rm -f auth1-container"
                 bat "docker rmi -f auth1-image"
                 bat "docker build -t auth1-image ."
-                bat "docker run -p 8081:8081 -d --name auth1-container auth1-image"
+                bat "docker run -p 8090:8090 -d --name auth1-container auth1-image"
             }        
         }        
     }
